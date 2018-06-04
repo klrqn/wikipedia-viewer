@@ -22,13 +22,17 @@ window.onload = function() {
                 dataType: "json",
                 success: function(data){
 
-                    // console.log(data[0]);
-                    // console.log(data[1][1]);
-                    // console.log(data[2][1]);
-                    // console.log(data[3][1]);
+                    console.log(data[0]);
+                    console.log(data[1][1]);
+                    console.log(data[2][1]);
+                    console.log(data[3][1]);
+
+                    console.log(data[1][2]);
+                    console.log(data[2][2]);
+                    console.log(data[3][2]);
 
                     for (var i=0; i<data[1].length; i++){
-                        $("#results").append('<p>hello</p>');
+                        $("#results").append(`<a href=${data[3][i]}>${data[1][i]}</a>`);
                     }
                 }
             })
