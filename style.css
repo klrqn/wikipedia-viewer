@@ -1,0 +1,28 @@
+body {
+  background: url(img/background-library.webp);
+  background-size:     cover;                      /* <------ */
+
+	-webkit-background-size: cover;
+
+	-moz-background-size: cover;
+
+	-o-background-size: cover;
+
+	background-size: cover
+}
+
+
+#top {
+	padding: 20px;
+}
+
+#bottom {
+	padding-left: 40px;
+}
+
+/*div #results {*/
+/*	text-align: left !important;*/
+/*	padding: 5px 30px !important;*/
+/*	color: green;*/
+/*}*/
+

@@ -5,6 +5,9 @@ window.onload = function() {
         $("#submit").on("click", function(e){
             e.preventDefault(); //prevent reload
 
+            // remove previous input
+            $(".result").remove();
+
             // get input
             var searchTerm = document.getElementById("input").value.replace(/\s/gi, '%20');
             console.log("search term:", searchTerm);
@@ -32,7 +35,7 @@ window.onload = function() {
                     console.log(data[3][2]);
 
                     for (var i=0; i<data[1].length; i++){
-                        $("#results").append(`<a href=${data[3][i]}>${data[1][i]}</a>`);
+                        $("#results").append(`<p class='result'><a href=${data[3][i]}>${data[1][i]}</a></p>`);
                     }
                 }
             })
