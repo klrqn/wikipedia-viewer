@@ -1,16 +1,13 @@
 body {
-  background: url(img/background-library.webp);
-  background-size:     cover;                      /* <------ */
-
-	-webkit-background-size: cover;
-
-	-moz-background-size: cover;
-
-	-o-background-size: cover;
-
-	background-size: cover
+	text-shadow: 4px 1px #777;
 }
 
+#first{
+	background: url(img/background-library.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.2;
+}
 
 #top {
 	padding: 20px;
